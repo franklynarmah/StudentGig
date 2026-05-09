@@ -1,0 +1,4 @@
+[
+  { "id": "demo1", "full_name": "Ama Owusu", "programme": "BSc Computer Science", "level": "300", "hall": "Volta", "student_id": "10987654", "is_worker": true, "is_poster": true, "available_now": true, "member_since": "2025-09-01T00:00:00Z" },
+  { "id": "demo2", "full_name": "Kofi Mensah", "programme": "BA Economics", "level": "200", "hall": "Commonwealth", "student_id": null, "is_worker": true, "is_poster": true, "available_now": false, "member_since": "2026-01-15T00:00:00Z" }
+]
