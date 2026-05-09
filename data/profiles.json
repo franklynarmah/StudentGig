@@ -1,4 +1,6 @@
 [
-  { "id": "demo1", "full_name": "Ama Owusu", "programme": "BSc Computer Science", "level": "300", "hall": "Volta", "student_id": "10987654", "is_worker": true, "is_poster": true, "available_now": true, "member_since": "2025-09-01T00:00:00Z" },
-  { "id": "demo2", "full_name": "Kofi Mensah", "programme": "BA Economics", "level": "200", "hall": "Commonwealth", "student_id": null, "is_worker": true, "is_poster": true, "available_now": false, "member_since": "2026-01-15T00:00:00Z" }
+  { "id": "demo1", "full_name": "Ama Owusu",      "programme": "BSc Computer Science",       "level": "300", "hall": "Volta",        "student_id": "10987654", "is_worker": true,  "is_poster": true,  "available_now": true,  "member_since": "2025-09-01T00:00:00Z" },
+  { "id": "demo2", "full_name": "Kofi Mensah",     "programme": "BA Economics",               "level": "200", "hall": "Commonwealth", "student_id": null,       "is_worker": true,  "is_poster": true,  "available_now": false, "member_since": "2026-01-15T00:00:00Z" },
+  { "id": "demo3", "full_name": "Afia Asante",     "programme": "LLB Law",                    "level": "400", "hall": "Legon",        "student_id": "20156789", "is_worker": true,  "is_poster": false, "available_now": true,  "member_since": "2023-09-01T00:00:00Z" },
+  { "id": "demo4", "full_name": "Kwame Boateng",   "programme": "BSc Business Administration","level": "300", "hall": "Mensah Sarbah","student_id": null,       "is_worker": false, "is_poster": true,  "available_now": false, "member_since": "2024-01-15T00:00:00Z" }
 ]

@@ -67,7 +67,6 @@ export default function OnboardingPage() {
       is_poster: isPoster,
       available_now: false,
       member_since: new Date().toISOString(),
-      email: pendingEmail,
     };
 
     addProfile(newProfile);

@@ -1,0 +1,6 @@
+[
+  { "email": "ama.owusu@ug.edu.gh",     "password": "ama123",   "profile_id": "demo1" },
+  { "email": "kofi.mensah@ug.edu.gh",   "password": "kofi123",  "profile_id": "demo2" },
+  { "email": "afia.asante@ug.edu.gh",   "password": "afia123",  "profile_id": "demo3" },
+  { "email": "kwame.boateng@ug.edu.gh", "password": "kwame123", "profile_id": "demo4" }
+]

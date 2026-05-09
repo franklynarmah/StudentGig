@@ -9,7 +9,12 @@ export interface Profile {
   is_poster: boolean;
   available_now: boolean;
   member_since: string;
-  email?: string;
+}
+
+export interface UserCredential {
+  email: string;
+  password: string;
+  profile_id: string;
 }
 
 export interface Gig {
