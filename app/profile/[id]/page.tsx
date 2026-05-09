@@ -90,8 +90,8 @@ export default function ProfilePage() {
         </a>
       )}
 
-      {/* Poster's open gigs */}
-      {profile.is_poster && gigs.length > 0 && (
+      {/* Open gigs */}
+      {gigs.length > 0 && (
         <div className="mt-8">
           <h2 className="text-lg font-bold text-gray-900 mb-4">
             Open Gigs by {profile.full_name.split(' ')[0]}
@@ -123,7 +123,7 @@ export default function ProfilePage() {
         </div>
       )}
 
-      {profile.is_poster && gigs.length === 0 && (
+      {gigs.length === 0 && (
         <div className="mt-6 bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
           <p className="text-sm text-gray-500">No open gigs from this poster right now.</p>
         </div>

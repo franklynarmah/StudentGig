@@ -13,20 +13,6 @@ const HALLS = [
 
 const LEVELS = ['100', '200', '300', '400'];
 
-function Toggle({ on, onToggle }: { on: boolean; onToggle: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onToggle}
-      className={`relative w-10 h-6 rounded-full transition-colors focus:outline-none flex-shrink-0 ${on ? 'bg-[#006B3C]' : 'bg-gray-300'}`}
-    >
-      <span
-        className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full shadow transition-transform ${on ? 'translate-x-4' : 'translate-x-0'}`}
-      />
-    </button>
-  );
-}
-
 export default function OnboardingPage() {
   const router = useRouter();
   const [pendingEmail, setPendingEmail] = useState<string | null>(null);
@@ -35,8 +21,6 @@ export default function OnboardingPage() {
   const [level, setLevel] = useState('100');
   const [hall, setHall] = useState('Volta');
   const [studentId, setStudentId] = useState('');
-  const [isWorker, setIsWorker] = useState(true);
-  const [isPoster, setIsPoster] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -63,8 +47,8 @@ export default function OnboardingPage() {
       level,
       hall,
       student_id: studentId.trim() || null,
-      is_worker: isWorker,
-      is_poster: isPoster,
+      is_worker: true,
+      is_poster: true,
       available_now: false,
       member_since: new Date().toISOString(),
     };
@@ -156,27 +140,6 @@ export default function OnboardingPage() {
             placeholder="e.g. 10987654"
             className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#006B3C] focus:border-transparent transition"
           />
-        </div>
-
-        {/* Role toggles */}
-        <div className="space-y-4 pt-1">
-          <p className="text-sm font-semibold text-gray-700">Your roles on the platform</p>
-
-          <div className="flex items-start gap-3">
-            <Toggle on={isWorker} onToggle={() => setIsWorker(!isWorker)} />
-            <div>
-              <p className="text-sm font-medium text-gray-800">I want to find work</p>
-              <p className="text-xs text-gray-500 mt-0.5">Appear in the Available Now section so employers can find you</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3">
-            <Toggle on={isPoster} onToggle={() => setIsPoster(!isPoster)} />
-            <div>
-              <p className="text-sm font-medium text-gray-800">I have work to offer</p>
-              <p className="text-xs text-gray-500 mt-0.5">Post gigs and jobs for other students</p>
-            </div>
-          </div>
         </div>
 
         {error && (
